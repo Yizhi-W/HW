@@ -2,7 +2,7 @@
 ##如何运行
 1. 在本地启动ganache应用，端口号选择8545
 2. 在如下文件中将`accounts`改为对应ganache中账户的私钥，后续小狐狸中账户用这些私钥导入。
-<img decoding="async" src="hardhat.png" >
+<img decoding="async" src="master/hardhat.png" >
 
 3. 在 `./contracts` 中安装需要的依赖，运行如下的命令：
 ````
@@ -17,12 +17,12 @@ npx hardhat compile
 npx hardhat run ./scripts/deploy.ts --network ganache
 ````
 运行之后会出现如下图片：
-<img decoding="async" src="t1.png" >
+<img decoding="async" src="master/t1.png" >
 将这三字符串对应复制到如下图所示位置：
-<img decoding="async" src="t2.png" >
+<img decoding="async" src="master/t2.png" >
 
 6. 在`./frontend`中安装如下图中所需要的包：
-<img decoding="async" src="t4.png" >
+<img decoding="async" src="master/t4.png" >
 例如用命令`npm install moment --save`安装moment
 
 7. 在`./frontend`中启动前端程序，运行如下的命令：
