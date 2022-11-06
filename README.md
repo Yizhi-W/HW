@@ -353,7 +353,7 @@ contract MyERC721 is ERC721 {
 <img decoding="async" src="master/overproposals.png" >
 可见，时间到达结束时间的提案已经结束，时间未达到结束时间的提案不会结束，且成功通过的提案会奖励发布者积分，且发起提案并通过3次的学生收到了纪念品奖励。
 ## 参考内容
-参考课程Demo中的`demo-lottery-application`
-参考b站课程: 基于以太坊的智能合约开发教程【Solidity】`https://www.bilibili.com/video/BV1St411a7Pk/?spm_id_from=333.337.search-card.all.click`
-参考solidity中文文档`https://learnblockchain.cn/docs/solidity/`
-以及参考了许多教react内容的教程
+1. 参考课程Demo中的`demo-lottery-application`
+2. 参考b站课程: 基于以太坊的智能合约开发教程【Solidity】`https://www.bilibili.com/video/BV1St411a7Pk/?spm_id_from=333.337.search-card.all.click`
+3. 参考solidity中文文档`https://learnblockchain.cn/docs/solidity/`
+4. 以及参考了许多教react内容的教程
