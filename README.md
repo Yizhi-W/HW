@@ -1,5 +1,5 @@
-#去中心化学生社团组织治理网站
-##如何运行
+# 去中心化学生社团组织治理网站
+## 如何运行
 1. 在本地启动ganache应用，端口号选择8545
 2. 在如下文件中将`accounts`改为对应ganache中账户的私钥，后续小狐狸中账户用这些私钥导入。
 <img decoding="async" src="master/hardhat.png" >
@@ -31,7 +31,7 @@ npm run start
 ````
 
 8. 在google浏览器打开`http://localhost:3000/`
-##功能实现分析
+## 功能实现分析
 1. 连接钱包
 
 在前端通过和demo中相同的方式让用户可以连接钱包，即如下代码段：
@@ -352,7 +352,7 @@ contract MyERC721 is ERC721 {
 然后在时间达到前三个提案结束后点击结束提案：
 <img decoding="async" src="master/overproposals.png" >
 可见，时间到达结束时间的提案已经结束，时间未达到结束时间的提案不会结束，且成功通过的提案会奖励发布者积分，且发起提案并通过3次的学生收到了纪念品奖励。
-##参考内容
+## 参考内容
 参考课程Demo中的`demo-lottery-application`
 参考b站课程: 基于以太坊的智能合约开发教程【Solidity】`https://www.bilibili.com/video/BV1St411a7Pk/?spm_id_from=333.337.search-card.all.click`
 参考solidity中文文档`https://learnblockchain.cn/docs/solidity/`
