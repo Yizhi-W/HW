@@ -96,11 +96,11 @@ useEffect(() => {
     }
 ````
 连接钱包前页面如下图：
-<img decoding="async" src="start.png" >
+<img decoding="async" src="master/start.png" >
 点击连接钱包会出现小狐狸：
-<img decoding="async" src="beforeconnect.png" >
+<img decoding="async" src="master/beforeconnect.png" >
 连接成功后当前用户会显示地址：
-<img decoding="async" src="connect.png" >
+<img decoding="async" src="master/connect.png" >
 
 2. 每个学生初始可以拥有或领取一些通证积分（ERC20）。
 
@@ -141,7 +141,7 @@ const [accountBalance, setAccountBalance] = useState(0)
     }, [account])
 ````
 领取积分后会显示当前积分，且小狐狸会报Confirmed transaction：
-<img decoding="async" src="airdrop.png" >
+<img decoding="async" src="master/airdrop.png" >
 如果多次领取会提示已经领取过。
 
 3. 学生可以使用一定数量通证积分，发起关于该社团进行活动或制定规则的提案（Proposal）
@@ -218,7 +218,7 @@ oncreateproposal = async (title:any,new_pro:any,duration:any) => {
 }
 ````
 创建提案时在对应位置输入内容，然后点击提交提案并确定花费即可：
-<img decoding="async" src="create.png" >
+<img decoding="async" src="master/create.png" >
 
 4. 前端提案信息：
 在合约中提供如下函数来供获取提案信息：
@@ -259,7 +259,7 @@ getPro = async () =>{
 }
 ````
 然后点击查询提案即可获取当前提案信息：
-<img decoding="async" src="createPro.png" >
+<img decoding="async" src="master/createPro.png" >
 
 5. 赞成与反对功能
 
@@ -297,11 +297,11 @@ function disapprove(uint pro_index) external{
 }
 ````
 赞成或反对都需要确定花费：
-<img decoding="async" src="bagree.png" >
+<img decoding="async" src="master/bagree.png" >
 然后对应的赞成和反对就会被提交：
-<img decoding="async" src="agree.png" >
+<img decoding="async" src="master/agree.png" >
 此时再对此提案提交赞成或反对都会无效，小狐狸会报告交易失败。
-<img decoding="async" src="overagree.png" >
+<img decoding="async" src="master/overagree.png" >
 
 6. 结束提案以及对发起提案并通过3次的学生分发纪念品（ERC721）
 因为智能合约中更改状态都需要消耗gas，所以无法自动结束提案，需要有人提供gas消耗，所以在合约中提供结束提案功能，并对成功结束了的用户提供积分奖励。且在此功能中会记录成功的提案的发起者已经成功通过了几个提案，并对其进行奖励纪念品（ERC721）。其中`reward`用来标识是否成功结束提案，即是否需要对其进行积分奖励，而新结束的提案会根据`proposer`找到它的发起人并增加其成功提案数量，如果数量达到3，则将其清空并奖励纪念品。
@@ -348,9 +348,9 @@ contract MyERC721 is ERC721 {
 }
 ````
 我首先创建了如下测试提案：
-<img decoding="async" src="proposals.png" >
+<img decoding="async" src="master/proposals.png" >
 然后在时间达到前三个提案结束后点击结束提案：
-<img decoding="async" src="overproposals.png" >
+<img decoding="async" src="master/overproposals.png" >
 可见，时间到达结束时间的提案已经结束，时间未达到结束时间的提案不会结束，且成功通过的提案会奖励发布者积分，且发起提案并通过3次的学生收到了纪念品奖励。
 ##参考内容
 参考课程Demo中的`demo-lottery-application`
